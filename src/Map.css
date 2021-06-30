@@ -1,0 +1,35 @@
+.map {
+    height: 500px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 2px;
+    margin-top: 16px;
+    box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+}
+
+.map .container {
+    height: 100%;
+}
+
+.infoImg img {
+    width: 100px;
+    border-radius: 5px;
+}
+
+.infoImg {
+    height: 80px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.infoContainer {
+    width: 100%;
+}
+
+.infoName {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size:large;
+    color: gray;
+}

@@ -1,0 +1,37 @@
+.infoBox {
+    flex: 1 !important;
+    cursor: pointer;
+}
+
+.infoBox:not(:last-child) {
+    margin-right: 30px;
+}
+
+.infoBox_cases {
+    color: red;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+.infoBox_total {
+    color: gray;
+    font-weight: 700 !important;
+    font-size: 0.8rem !important;
+    margin-top: 15px !important;
+}
+
+.infoBox--selected {
+    border-top: 10px solid green;
+    transition: 0.7s !important;
+}
+
+.infoBox--red {
+    border-color: red;
+}
+
+.infoBox__cases--green {
+    color: green;
+}
+
+/* jaani 4:20:35 */
