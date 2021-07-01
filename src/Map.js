@@ -2,20 +2,22 @@ import React from "react";
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
 import "./Map.css";
 import { showDataOnMap } from "./util";
-function ChangeMapView({ coords }) {
+function ChangeMapView({ coords, zoom }) {
     const map = useMap();
-    map.setView(coords, map.getZoom());
-
+    map.setView(coords, zoom);
+    // console.log("Map => ",map.getZoom(4))
     return null;
 }
 
-function Map({ countries, casesType, center, zoom }) {
+function Map({ countries, casesType, center, zoom, country }) {
 
 
     return (
         <div className="map">
-            <MapContainer className="container" center={center} zoom={zoom} >
-                <ChangeMapView coords={center} />
+            {console.log(zoom)}
+            <MapContainer className="container" center={center} zoom={(zoom)} >
+
+                <ChangeMapView coords={center} zoom={(country === "Worldwide") ? 3 : 4} />
 
                 <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
